@@ -8,6 +8,7 @@ function App() {
     <input placeholder="Course"/>
     <br /> <br />
     <input placeholder="Age"/>
+    <h1>Test</h1>
     </>
   )
 }
