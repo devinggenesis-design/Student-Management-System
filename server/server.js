@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
-const Student = require("./model/Student")
+const Student = require("./models/Student")
 
 require("dotenv").config();
 
