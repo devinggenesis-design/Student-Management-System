@@ -33,7 +33,7 @@ app.get("/", (req,res)=> {
 });
 
 app.get("/students", (req,res)=> {
-    res.send("Server is Running");
+    res.json(students);
 });
 
 app.listen(5000, () => {
