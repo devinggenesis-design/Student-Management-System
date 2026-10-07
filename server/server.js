@@ -1,3 +1,4 @@
+
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -9,6 +10,15 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
+let students = [
+    {
+        id: 1,
+        name: "Genesis",
+        course: "BSIT-MWA",
+        age: 21
+    }
+];
+
 mongoose
 .connect(process.env.MONGO_URI)
 .then(() =>{
@@ -19,6 +29,10 @@ mongoose
 });
 
 app.get("/", (req,res)=> {
+    res.send("Server is Running");
+});
+
+app.get("/students", (req,res)=> {
     res.send("Server is Running");
 });
 
